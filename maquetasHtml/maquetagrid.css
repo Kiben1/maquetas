@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 200px 100px;
+    gap: 10px;
+    grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+}
+.item1{
+    grid-area:  header;
+    background-color: antiquewhite;
+}
+.item2{
+    grid-area: sidebar;
+    background-color: blueviolet;
+}
+.item3{
+    grid-area: main;
+    background-color: blueviolet;
+}
+.item4{
+    grid-area: main;
+    background-color: blueviolet;
+}
